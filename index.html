@@ -10,13 +10,54 @@
       <link ref="css/styles.css" rel="stylesheet" >
       <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
       <link href="bootstrap/-responsve.css"/>
+      <style>
+            .nav {
+             list-style-type: none;
+             text-align: center;
+             margin: 0;
+             padding: 0;
+            }
+
+            .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;  
+            }   
+
+    
+        ul {
+          list-style-type: none;
+          margin: 10px;
+          padding: 10px;
+        }
+       
+        li {
+          display: inline;
+        }
+        .footer {
+            position: fixed;
+           
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+
+
+
+        </style>
       
-      
-      <a href="https://www.libertymutual.com">Liberty Mutual Home</a>
-      <a href="index.html">Developer Relations Home</a>
-      <a href="survey.html">Developer Survey</a>
     </head>
     <body>
+
+        <ul class="nav">
+            <li><a href="https://www.libertymutual.com">Liberyt Mutual Home</a></li>
+            <li><a href="index.html">Developer Relations Home</a></li>
+            <li><a href="survey.html">Developer Survey</a></li>
+          </ul>
+
+
         <div class = "row">
         <div class="span10">
            <h1>Developer Relations: Empowering and Supporting LM Developers</h1>
@@ -74,8 +115,8 @@
         </div>
     </body>
 
-    <footer>
+    <div class = "footer">
         <p>Copyright 2020 by Liberty Mutual. All rights reserverd</p>
         
-      </footer>
+    </div>
 </hmtl>
