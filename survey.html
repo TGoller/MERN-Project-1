@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class = "container-fluid">
+<div class = "container">
    
     <head>
         <link ref="css/styles.css" rel="stylesheet" >
@@ -31,13 +31,13 @@
 
          <form id=inputform>
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder = "Enter your name" required>
             <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder = "Enter your email" required>
             <label for="pin">N-Number</label><br>
-            <input type="text" id="pin" name="pin" required>
+            <input type="text" id="pin" name="pin" placeholder = "Enter your N-number" required>
             <label for="age">Age (optional)</label><br>
-            <input type="number" id="age" name="age">
+            <input type="number" id="age" name="age" placeholder = "Age">
 
             <label for="role">Which option best describes your current role as it relates to IT?</label><br>
             <select name="role" id="role" required>
@@ -74,19 +74,26 @@
               <option value="ssis">SSIS</option>
             </select>
 
+          
             <p>What technolgoy  would you like to see embraces in Liberty Mutual's IT operations? (check all that apply)</p>
-            <input type="checkbox" id="asp" name="asp" value="asp">
-            <label for="asp">ASP.NET Webforms</label><br>
-            <input type="checkbox" id="java" name="java" value=java>
-            <label for="java">Java</label><br>
-            <input type="radio" id="cobol" name="cobol" value=cobol>
-            <label for="cobol">Cobol</label><br>
-            <input type="radio" id="ssis" name="ssis" value=ssis>
-            <label for="ssis">SSIS</label><br>
-
+            <form>
+                <label class="checkbox-inline">
+                    <input type = "checkbox" id= "asp" name= "asp" > ASP.Net Webforms
+                </label>
+                <label class="checkbox-inline">
+                    <input type = "checkbox" > Java
+                </label>
+                <label class="checkbox-inline">
+                    <input type = "checkbox" > Cobol
+                </label>
+                <label class="checkbox-inline">
+                    <input type = "checkbox" > SSIS
+                </label>
+                </form>
+      
 
             <label for="comments">Any comment or suggestions?</label><br>
-            <input type="text" id="comments" name="comments">
+            <input type="text" id="comments" name="comments" placeholder="Enter your comment here..">
 
          </form>
          <button type="submit" form="inputform" value="Submit"> Submit</button>
