@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <header>
-        <p>Developer Survey</p>
-    </header>
+<div class = "container-fluid">
+   
     <head>
-        <title>
-            LM Developer Survey
-        </title> 
         <link ref="css/styles.css" rel="stylesheet" >
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
         <link href="bootstrap/-responsve.css"/>
-        <a href="index.html">Return to home</a>
+       <style>
+           .nav {
+             list-style-type: none;
+             text-align: center;
+             margin: 0;
+             padding: 0;
+           }
+             .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;  
+            }   
+
+       </style>
   
       </head>
       <body>
+        <ul class="nav">
+            <li><a href="https://www.libertymutual.com"><u>Liberty Mutual Home</u></a></li>
+            <li><a href="index.html"><u>Developer Relations Home</u></a></li>
+            <li><a href="survey.html"><u>Developer Survey</u></a></li>
+          </ul>
+
          <form id=inputform>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required>
@@ -33,15 +47,26 @@
               <option value="other">Other</option>
             </select>
 
+          
             <p> Would you recommend employment at Liberty Mutual to an IT professional?</p>
-            <input type="radio" id="radio1" name="radio1" value=radio1>
-            <label for="radio1">Definitely</label><br>
-            <input type="radio" id="radio2" name="radio2" value=radio2>
-            <label for="radio2">Maybe</label><br>
-            <input type="radio" id="radio3" name="radio3" value=radio3>
-            <label for="radio3">Not sure</label><br>
+            <form>
+                <label class = "radio-inline">
+                <input type="radio" name="radios" > Definitely 
+            </label>
+               
+            <label class = "radio-inline">
+                <input type="radio" name="radios" > Maybe 
+             </label>
+   
+            
+            <label class = "radio-inline" > 
+                <input type="radio"  name="radios" > Not sure
+            </label>
 
-            <label for="retire">What current technology at Liberty Mutual do you most feel shoud be phased out?</label><br>
+             </form> 
+    
+
+            <label for="retire">What current technology at Liberty Mutual do you most feel shoud be phased out?</label>
             <select name="retire" id="retire" required>
               <option value="asp">ASP.NET WebForms</option>
               <option value="java">Java</option>
@@ -66,7 +91,7 @@
          </form>
          <button type="submit" form="inputform" value="Submit"> Submit</button>
       </body>
-
+</div>
       <footer>
         <p>Copyright 2020 by Liberty Mutual. All rights reserverd</p>
         
