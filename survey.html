@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class = "container">
+<div class = "container-fluid">
    
     <head>
-        <link ref="css/styles.css" rel="stylesheet" >
+        
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
-        <link href="bootstrap/-responsve.css"/>
-       <style>
-           .nav {
-             list-style-type: none;
-             text-align: center;
-             margin: 0;
-             padding: 0;
-           }
-             .nav li {
-            display: inline-block;
-            font-size: 20px;
-            padding: 20px;  
-            }   
+        <link href="bootstrap/css/bootstrap-responsive.css"/>
+        <link href="css/styles.css" rel="stylesheet" >
 
-       </style>
   
       </head>
       <body>
@@ -30,16 +18,22 @@
           </ul>
 
          <form id=inputform>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder = "Enter your name" required>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" placeholder = "Enter your email" required>
-            <label for="pin">N-Number</label><br>
+             <div class = form-group>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder = "Enter your name" required>
+            </div>
+            <div class = form-group>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class= "form-control" placeholder = "Enter your email" required>
+            </div>
+
+            <label for="pin">N-Number</label>
             <input type="text" id="pin" name="pin" placeholder = "Enter your N-number" required>
-            <label for="age">Age (optional)</label><br>
+
+            <label for="age">Age (optional)</label>
             <input type="number" id="age" name="age" placeholder = "Age">
 
-            <label for="role">Which option best describes your current role as it relates to IT?</label><br>
+            <label for="role">Which option best describes your current role as it relates to IT?</label>
             <select name="role" id="role" required>
               <option value="notit">I don't work in IT but I want to</option>
               <option value="init">I work in IT</option>
@@ -48,22 +42,22 @@
             </select>
 
           
-            <p> Would you recommend employment at Liberty Mutual to an IT professional?</p>
-            <form>
+          
+            <div class = "form-group">
+                <p> Would you recommend employment at Liberty Mutual to an IT professional?</p>
                 <label class = "radio-inline">
                 <input type="radio" name="radios" > Definitely 
-            </label>
-               
-            <label class = "radio-inline">
-                <input type="radio" name="radios" > Maybe 
-             </label>
-   
+                </label>
             
-            <label class = "radio-inline" > 
+                <label class = "radio-inline">
+                <input type="radio" name="radios" > Maybe 
+                </label>
+            
+                <label class = "radio-inline" > 
                 <input type="radio"  name="radios" > Not sure
-            </label>
-
-             </form> 
+                </label>
+           </div>
+            <br>
     
 
             <label for="retire">What current technology at Liberty Mutual do you most feel shoud be phased out?</label>
@@ -76,27 +70,29 @@
 
           
             <p>What technolgoy  would you like to see embraces in Liberty Mutual's IT operations? (check all that apply)</p>
-            <form>
+          
+            <div class = "form=group">          
                 <label class="checkbox-inline">
-                    <input type = "checkbox" id= "asp" name= "asp" > ASP.Net Webforms
+                    <input type = "checkbox"  > React.jx
                 </label>
                 <label class="checkbox-inline">
-                    <input type = "checkbox" > Java
+                    <input type = "checkbox" > Microservices
                 </label>
                 <label class="checkbox-inline">
-                    <input type = "checkbox" > Cobol
+                    <input type = "checkbox" > Golang
                 </label>
                 <label class="checkbox-inline">
-                    <input type = "checkbox" > SSIS
+                    <input type = "checkbox" > Custom Middleware
                 </label>
-                </form>
-      
+            </div>   
+            <br>
 
             <label for="comments">Any comment or suggestions?</label><br>
             <input type="text" id="comments" name="comments" placeholder="Enter your comment here..">
 
          </form>
-         <button type="submit" form="inputform" value="Submit"> Submit</button>
+         <button type="submit" form="inputform" value="Submit"> Submit Survey</button>
+         <br>
       </body>
 </div>
       <footer>
